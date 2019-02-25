@@ -8,8 +8,9 @@ Encore du JS, avec des features des folaïe !!
 
 Comme d'hab: `git clone` `bundle install` puis `rails db:create db:migrate db:seed`
 
-non je déconne, regarde ici: 👇
+non je déconne, regarde plutot ici: 👇
 
 ## lien vers les internets
 
 Tu peux voir le site en live sur: **https://charlesdigi.github.io/MoveYourJS/.**
+
