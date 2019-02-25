@@ -10,11 +10,12 @@ myFoot[0].addEventListener("click", onFootClick);
 
 // Fonctionnalité 2
 let navHeader = document.getElementsByTagName("header")[0];
+let navButton = document.getElementsByClassName("navbar-toggler")[0];
 let onNavHeaderClick = function () {
     navHeader.getElementsByTagName("div")[0].classList.toggle("collapse");
     console.log(navHeader.classList);
 };
-navHeader.addEventListener("click", onNavHeaderClick);
+navButton.addEventListener("click", onNavHeaderClick);
 
 
 // Fonctionnalité 3
@@ -101,3 +102,30 @@ myNavBar.addEventListener("dblclick", onNavClik);
     };
     leftArrow.addEventListener("click", onArrowClick);
 };
+
+// Fonctionnalité 9
+let myTextJS = document.getElementsByClassName('navbar-brand')[0];
+console.log(myTextJS);
+let myBodyPage = document.getElementsByTagName("body")[0];
+
+let onLogoAndKey = function (e) {
+    let key = e.key;
+    console.log(e);
+    if (key == "a") {
+        myBodyPage.className = "";
+        myBodyPage.classList.add("col-4");
+    }
+    else if (key == "y") {
+        myBodyPage.className = "";
+        myBodyPage.classList.add("offset-md-4");
+    }
+    else if (key == "p") {  
+        myBodyPage.className = "";
+        myBodyPage.classList.add("offset-md-8");
+    }
+    else if (key == "b") {
+        myBodyPage.className = "";
+    };
+};
+
+myTextJS.addEventListener("keypress", onLogoAndKey);
